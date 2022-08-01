@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 4: Ingresos y Egresos</title>
+    <meta name="description" content="Practicando un poco de Javascript">
+
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/media-q.css" media="screen and (max-width: 768px)"/>
+
+    
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/estilos.js"></script>
+</head>
+<body id="salarios-body">
+    <!--Puedes calcular la mediana de ingresos no fijos, 
+    capacidad de ahorro, 
+    capacidad de endeudamiento, 
+    recolección de impuestos, 
+    diferencia salarial, 
+    relación entre formalidad/informalidad y pobreza/riqueza…-->
+    <header class="header">
+        <a href="#" class="logo nav-link"><img src="https://pixica.com.mx/wp-content/uploads/2016/07/pixica-blanco.png" alt="Logo de la empresa"></a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="figuras.html" class="nav-menu-link nav-link">Taller 1</a></li>
+            <li class="nav-menu-item"><a href="descuentos.html" class="nav-menu-link nav-link">Taller 2</a></li>
+            <li class="nav-menu-item"><a href="estadistica.html" class="nav-menu-link nav-link">Taller 3</a></li>
+            <li class="nav-menu-item"><a href="salarios.html" class="nav-menu-link nav-link">Taller 4</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Ingresos y Egresos</h1>
+            <p>Cuarto Taller del Curso Práctico de Javascript : Aplica todo lo aprendido</p>
+        </div>
+        <div class="grid-container container">
+            <section class="general-balance" id="general-balance">
+                <h2>Balance general</h2>
+                <div class="account">
+                    <!-- CUENTA -->
+                    <p class="account-name">Balance</p>
+                    <p class="account-money" id="totalIngresosP"><span>$</span>19,579</p>
+                </div>
+                <div class="account">
+                    <!-- GASTOS -->
+                    <p class="account-name">Gastos</p>
+                    <p class="account-money" id="totalGastosP"><span>$</span>2,249</p>
+                </div>
+                <div class="add-forms" id="add">
+                    <!-- FORMULARIO INGRESOS -->
+                        <div class="form-container">
+                            <h3>Ingreso</h3>
+                            <form action="" id="formularioIngresos">
+                                <label for="cantidad" >¿Cuánto ganaste?</label>
+                                <span class="currencyinput">$
+                                 <input type="number" id="cantidad-ganada">
+                                </span>
+                                <label for="concepto" >Concepto</label>
+                                <input type="text" id="concepto-ganada" class="currencyinput">
+                                <button type="button" class="btn-primary" onclick="sumarIngresos()">Añadir</button>
+                            </form>
+                        </div>
+                    <!-- FORMULARIOS GASTOS -->
+                        <div class="form-container">
+                            <h3>Gastos</h3>
+                            <form action="" id="formularioGastos">
+                                <label for="cantidad" >¿Cuanto gastaste?</label>
+                                <span class="currencyinput">$
+                                    <input type="number" id="cantidad-gastada">
+                                   </span>
+                                <label for="concepto" >Concepto</label>
+                                
+                                <input type="text" id="concepto-gastado" class="currencyinput">
+                                <button type="button" class="btn-primary" onclick="sumarGastos()">Añadir</button>
+                            </form>
+                        </div>
+                </div>
+            </section>
+            <section class="concepts" id="concepts">
+                <h2>Hoy, <span id="day-number"></span> de <span id="month-number"></span> de <span id="year-number"></span></h2>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div><a href="#">Ver mas</a></div>
+        <div><a href="https://github.com/Abigailal/PracticaJava">Repositorio</a></div>
+      </footer>
+      
+      <script src="../JS/analisis.js"></script>
+</body>
+</html>

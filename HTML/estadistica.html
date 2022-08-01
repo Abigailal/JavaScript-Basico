@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3: Promedio, Mediana, Moda</title>
+    <meta name="description" content="Practicando un poco de Javascript">
+
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/media-q.css" media="screen and (max-width: 768px)"/>
+
+    <script src="../JS/estadistica.js"></script>
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="../JS/estilos.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo nav-link"><img src="https://pixica.com.mx/wp-content/uploads/2016/07/pixica-blanco.png" alt="Logo de la empresa"></a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="figuras.html" class="nav-menu-link nav-link">Taller 1</a></li>
+            <li class="nav-menu-item"><a href="descuentos.html" class="nav-menu-link nav-link">Taller 2</a></li>
+            <li class="nav-menu-item"><a href="estadistica.html" class="nav-menu-link nav-link">Taller 3</a></li>
+            <li class="nav-menu-item"><a href="salarios.html" class="nav-menu-link nav-link">Taller 4</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Promedio, Mediana y Moda</h1>
+            <p>Tercer Taller del Curso Práctico de Javascript</p>
+        </div>
+        <div class="grid-container estadistica">
+            <div class="estadistica-item">
+                <h2>Calcular la Media, Mediana y Moda de un conjunto de datos</h2>
+                <img src="../assets/medias.png" alt="Figura de estadisticas">
+                <form action="" class="card-form">
+                    <label for="datos">Inserta tus datos:</label>
+                    <input type="text" placeholder="Ej: 20, 12, 120, 021" id="datos" class="input">
+                    <div>
+                        <button type="button" class="media" onclick="calcularMedia()">Promedio</button>
+                        <button type="button" class="mediana" onclick="calcularMediana()">Mediana</button>
+                        <button type="button" class="moda" onclick="calcularModa()">Moda</button>
+                    </div>
+                    <p>Resultado: </p>
+                    <div class="resultados"><p id="resultP"></p></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div><a href="#">Ver mas</a></div>
+        <div><a href="https://github.com/Abigailal/PracticaJava">Repositorio</a></div>
+      </footer>
+
+</body>
+</html>
