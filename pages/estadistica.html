@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,40 @@
     <title>Taller 3: Promedio, Mediana, Moda</title>
     <meta name="description" content="Practicando un poco de Javascript">
 
-    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
-    <link rel="stylesheet" href="../CSS/Style.css">
-    <link rel="stylesheet" href="../CSS/media-q.css" media="screen and (max-width: 768px)"/>
+    <link rel="shortcut icon"
+        href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-q.css" media="screen and (max-width: 768px)" />
 
     <script src="../JS/estadistica.js"></script>
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-    <script defer src="../JS/estilos.js"></script>
+    <script defer src="../js/estilos.js"></script>
 </head>
+
 <body>
     <header class="header">
-        <a href="#" class="logo nav-link"><img src="https://pixica.com.mx/wp-content/uploads/2016/07/pixica-blanco.png" alt="Logo de la empresa"></a>
+        <a href="#" class="header__logo nav-link"><img src="https://static.platzi.com/static/images/footer/logo.png"
+                alt="Logo de la empresa"></a>
         <nav class="nav">
-          <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">Taller 1</a></li>
-            <li class="nav-menu-item"><a href="descuentos.html" class="nav-menu-link nav-link">Taller 2</a></li>
-            <li class="nav-menu-item"><a href="estadistica.html" class="nav-menu-link nav-link">Taller 3</a></li>
-            <li class="nav-menu-item"><a href="salarios.html" class="nav-menu-link nav-link">Taller 4</a></li>
-          </ul>
+            <button class="nav__toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+            <ul class="nav__menu">
+                <li class="nav__menu--item"><a href="../index.html" class="nav__menu--link nav-link">Taller 1</a></li>
+                <li class="nav__menu--item"><a href="descuentos.html" class="nav__menu--link nav-link">Taller
+                        2</a></li>
+                <li class="nav__menu--item"><a href="estadistica.html" class="nav__menu--link nav-link">Taller
+                        3</a></li>
+                <li class="nav__menu--item"><a href="salarios.html" class="nav__menu--link nav-link">Taller 4</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <main>
-        <div class="title">
+    <main class="main__estadistica">
+        <div class="main__title">
             <h1>Promedio, Mediana y Moda</h1>
             <p>Tercer Taller del Curso Práctico de Javascript</p>
         </div>
-        <div class="grid-container estadistica">
-            <div class="estadistica-item">
+        <div class="main__grid main__estadistica--container">
+            <div class="main__estadistica--item">
                 <h2>Calcular la Media, Mediana y Moda de un conjunto de datos</h2>
                 <img src="../assets/medias.png" alt="Figura de estadisticas">
                 <form action="" class="card-form">
@@ -46,15 +53,18 @@
                         <button type="button" class="moda" onclick="calcularModa()">Moda</button>
                     </div>
                     <p>Resultado: </p>
-                    <div class="resultados"><p id="resultP"></p></div>
+                    <div class="resultados">
+                        <p id="resultP"></p>
+                    </div>
                 </form>
             </div>
         </div>
     </main>
     <footer>
-        <div><a href="#">Ver mas</a></div>
+        <div><a href="https://abigailal.github.io/Portafolio/">Ver mas</a></div>
         <div><a href="https://github.com/Abigailal/PracticaJava">Repositorio</a></div>
-      </footer>
+    </footer>
 
 </body>
+
 </html>

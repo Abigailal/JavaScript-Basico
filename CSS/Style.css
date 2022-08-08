@@ -3,24 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2em;
 }
+
 :root {
-    --color_black : #2b2726 ;
-    --color_blue: #0a516d ;
+    --color_black: #2b2726;
+    --color_blue: #0a516d;
     --color_aquia: #018790;
-    --color_green:  #7dad93 ;
-    --color_yellow: #bacca4 ;
+    --color_green: #7dad93;
+    --color_yellow: #bacca4;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 a:hover {
     color: var(--color_yellow);
     text-decoration: underline;
@@ -37,40 +42,52 @@ a:hover {
     align-items: center;
     padding: 30px 20px;
 }
-.header .logo {
-    padding-top: 30px;
+
+.header .header__logo {
+    width: 10%;
+    height: auto;
 }
+
+.header .header__logo img {
+    width: 100%;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     max-width: 992px;
 }
+
 .nav-link {
     color: white;
     text-decoration: none;
 }
-.nav-menu {
+
+.nav .nav__menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
 }
-.nav-menu-item {
+
+.nav .nav__menu .nav__menu--item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
 }
-.nav-menu-link {
+
+.nav .nav__menu .nav__menu--link {
     padding: 8px 12px;
     border-radius: 3px;
-}  
-.nav-menu-link:hover {
+}
+
+.nav .nav__menu .nav__menu--link:hover {
     background-color: var(--color_blue);
     transition: 0.5s;
 }
-/* TOGGLE */
-.nav-toggle {
+
+.nav__toggle {
     color: white;
     background: none;
     border: none;
@@ -80,34 +97,41 @@ a:hover {
     cursor: pointer;
     display: none;
 }
+
 main {
     height: auto;
     background: linear-gradient(to bottom, var(--color_aquia) 0%, var(--color_green) 100%);
     text-align: center;
 }
-main .title {
+
+main .main__title {
     border-bottom: 2px solid #cdd2da;
     margin: 0 50px;
 }
-main .grid-container {
+
+main .main__grid {
     display: grid;
 }
+
 main form input {
     border-radius: 5px;
-    height:30px;
+    height: 30px;
     margin-bottom: 5px;
 }
-main form button{
+
+main form button {
     padding: 10px;
     border-radius: 5px;
     background-color: var(--color_yellow);
     font-weight: 700;
 }
-main form .resultados{
-    color:white;
+
+main form .resultados {
+    color: white;
     margin-top: 10px;
 }
-footer{
+
+footer {
     height: 100px;
     background-color: var(--color_green);
     display: flex;
@@ -120,13 +144,18 @@ footer{
 
 
 /*-------------------Figuras*/
-main .figures {
-    grid-template-columns:repeat(auto-fit, minmax(600px,1fr));
+.main__figures {
+    height: 747px;
+}
+.main__figures .main__figures--container {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     justify-items: center;
     padding-bottom: 60px;
     justify-content: center;
+    align-items: center;
 }
-main .figures .figures-item {
+
+.main__figures .main__figures--container .main__figures--item {
     height: 500px;
     width: 400px;
     margin-top: 100px;
@@ -134,21 +163,26 @@ main .figures .figures-item {
     border-radius: 20px;
     padding: 10px;
 }
-main .figuras-form .ocultar {
+
+.main__figures .main__figures--form .ocultar {
     display: none;
 }
-main .figures .figures-item img{
+
+.main__figures .main__figures--container .main__figures--item img {
     width: 50%;
 }
 
 
 /*----------------------------Descuentos*/
-main .descuentos {
-    grid-template-columns: minmax(700px,1fr);
+.main__descuentos {height: 747px;}
+.main__descuentos .main__descuentos--container {
+    grid-template-columns: minmax(700px, 1fr);
     justify-items: center;
     justify-content: center;
+    align-items: center;
 }
-main .descuentos .descuentos-item {
+
+.main__descuentos .main__descuentos--container .main__descuentos--item {
     height: auto;
     width: 40%;
     background-color: var(--color_aquia);
@@ -156,18 +190,21 @@ main .descuentos .descuentos-item {
     padding: 10px;
     margin: 30px;
 }
-main .descuentos .descuentos-item img{
+
+.main__descuentos .main__descuentos--container .main__descuentos--item img {
     width: 50%;
 }
 
 
 /*---------------------------------------Estadistica*/
-main .estadistica {
-    grid-template-columns: minmax(700px,1fr);
+.main__estadistica {height: 747px;}
+.main__estadistica .main__estadistica--container {
+    grid-template-columns: minmax(700px, 1fr);
     justify-items: center;
     justify-content: center;
 }
-main .estadistica .estadistica-item {
+
+.main__estadistica .main__estadistica--container .main__estadistica--item{
     height: auto;
     width: 40%;
     background-color: var(--color_aquia);
@@ -175,61 +212,72 @@ main .estadistica .estadistica-item {
     padding: 10px;
     margin: 30px;
 }
-main .estadistica .estadistica-item img{
+
+.main__estadistica .main__estadistica--container .main__estadistica--item img {
     width: 40%;
 }
-main .estadistica .estadistica-item h2 {
+
+.main__estadistica .main__estadistica--container .main__estadistica--item h2 {
     margin-bottom: 20px;
 }
-main .estadistica .estadistica-item form input {
+
+.main__estadistica .main__estadistica--container .main__estadistica--item form input {
     width: 70%;
     height: 40px;
     margin-bottom: 20px;
 }
-main .estadistica .estadistica-item form button {
+
+.main__estadistica .main__estadistica--container .main__estadistica--item form button {
     margin-bottom: 20px;
 }
 
 
 /*-----------------------Salarios*/
-.container {
-    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+
+.main__balance--container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     align-items: center;
     justify-content: center;
     padding: 50px 0 100px 0;
     width: 70%;
     margin: auto;
-
 }
-
-.account{
+.general-balance{
+    height: 525px;
+}
+.account {
     display: flex;
     justify-content: space-around;
     justify-items: center;
     border-radius: 10px;
-    box-shadow:  0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
     padding: 10px;
     width: 70%;
     margin: auto;
     margin-bottom: 17px;
 }
-.account .account-name{
+
+.account .account-name {
     font-size: 1.5em;
 }
-.account .account-money{
+
+.account .account-money {
     color: white;
     font-size: 1.5em;
     font-weight: 700;
 }
-.account .account-money span{
+
+.account .account-money span {
     font-size: 1.5em;
 }
-.account a{
-    align-self: center; 
+
+.account a {
+    align-self: center;
     color: black;
 }
-.btn-primary{
+
+.btn-primary {
     cursor: pointer;
     height: 30px;
     width: 85px;
@@ -238,47 +286,56 @@ main .estadistica .estadistica-item form button {
     border-radius: 10px;
     border: 0;
     background-color: var(--color_yellow);
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: var(--color_aquia);
     color: white;
 }
-.concepts{
+
+.concepts {
     margin: 34px 19px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
     padding: 17px;
     place-self: flex-start center;
 }
-.concepts h2{
+
+.concepts h2 {
     font-weight: 500;
 }
-.concepts .single-concept{
+
+.concepts .single-concept {
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
     padding-bottom: 12px;
     border-bottom: 1px solid black;
 }
-.concepts .single-concept .concept-left p:nth-child(1){
+
+.concepts .single-concept .concept-left p:nth-child(1) {
     font-size: 1em;
     color: white;
     font-weight: 300;
 }
-.concepts .single-concept .concept-left p:nth-child(2){
+
+.concepts .single-concept .concept-left p:nth-child(2) {
     font-size: 1em;
     font-weight: 300;
 }
-.concepts .single-concept .concept-charge{
+
+.concepts .single-concept .concept-charge {
     font-size: 1em;
     color: white;
     font-weight: 300;
 }
-.concepts .single-concept .concept-charge span{
+
+.concepts .single-concept .concept-charge span {
     font-size: 1em;
 }
-.add-forms{
+
+.add-forms {
     margin-top: 12px;
     padding: 17px;
     display: flex;
@@ -287,32 +344,39 @@ main .estadistica .estadistica-item form button {
     align-items: center;
     justify-content: center;
 }
-.add-forms .form-container{
+
+.add-forms .form-container {
     border-radius: 10px;
-    box-shadow:  0px 4px 8px 0px rgba(0, 0, 0, 0.4);;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);
+    ;
     padding: 17px;
     margin: 10px;
 }
-.add-forms .form-container h3{
+
+.add-forms .form-container h3 {
     text-align: center;
     font-size: 1.5em;
     font-weight: 500;
 }
+
 .add-forms .form-container form {
     display: grid;
     justify-items: center;
     align-items: center;
 }
-.form-container form  input {
+
+.form-container form input {
     background: none;
     border: none;
     width: 90%;
     padding: 8px;
 }
-.form-container label{
+
+.form-container label {
     font-size: 1em;
 }
-.form-container .currencyinput{
+
+.form-container .currencyinput {
     width: 90%;
     background-color: var(--color_green);
     border-radius: 6px;
@@ -320,13 +384,13 @@ main .estadistica .estadistica-item form button {
     padding-left: 22px;
     display: flex;
 }
+
 .form-container .btn-primary {
     padding: 0;
     padding-top: 4px;
 }
+
 .form-container form input:focus {
     border: none;
     outline: none;
 }
-
-

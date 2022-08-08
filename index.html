@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,52 +8,58 @@
     <title>Taller 1: Figuras Geométricas</title>
     <meta name="description" content="Practicando un poco de Javascript">
 
-    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
-    <link rel="stylesheet" href="./CSS/Style.css">
-    <link rel="stylesheet" href="./CSS/media-q.css" media="screen and (max-width: 768px)"/>
+    <link rel="shortcut icon"
+        href="https://th.bing.com/th/id/R.01022ebb8895e9b2325000ae73120643?rik=pWzuYUonEvkdtw&pid=ImgRaw&r=0&sres=1&sresct=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-q.css" media="screen and (max-width: 768px)" />
 
     <script src="./JS/figuras.js"></script>
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
-    <script defer src="./JS/estilos.js"></script>
+    <script defer src="./js/estilos.js"></script>
 </head>
 
-<body id="figuras-body">
+<body id="body__figures">
     <header class="header">
-        <a href="#" class="logo nav-link"><img src="https://pixica.com.mx/wp-content/uploads/2016/07/pixica-blanco.png" alt="Logo de la empresa"></a>
+        <a href="#" class="header__logo nav-link"><img src="https://static.platzi.com/static/images/footer/logo.png"
+                alt="Logo de la empresa"></a>
         <nav class="nav">
-          <button class="nav-toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
-          <ul class="nav-menu">
-            <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Taller 1</a></li>
-            <li class="nav-menu-item"><a href="./HTML/descuentos.html" class="nav-menu-link nav-link">Taller 2</a></li>
-            <li class="nav-menu-item"><a href="./HTML/estadistica.html" class="nav-menu-link nav-link">Taller 3</a></li>
-            <li class="nav-menu-item"><a href="./HTML/salarios.html" class="nav-menu-link nav-link">Taller 4</a></li>
-          </ul>
+            <button class="nav__toggle" aria-label="Abrir menú"><i class="fas fa-bars"></i></button>
+            <ul class="nav__menu">
+                <li class="nav__menu--item"><a href="index.html" class="nav__menu--link nav-link">Taller 1</a></li>
+                <li class="nav__menu--item"><a href="pages/descuentos.html" class="nav__menu--link nav-link">Taller
+                        2</a></li>
+                <li class="nav__menu--item"><a href="pages/estadistica.html" class="nav__menu--link nav-link">Taller
+                        3</a></li>
+                <li class="nav__menu--item"><a href="pages/salarios.html" class="nav__menu--link nav-link">Taller 4</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="title">
+    <main class="main__figures">
+        <div class="main__title">
             <h1>Figuras Geométricas</h1>
             <p>Primer Taller del Curso Práctico de Javascript</p>
         </div>
-        <div class="grid-container figures">
-            <div class="figures-item">
+        <div class="main__grid main__figures--container">
+            <div class="main__figures--item">
                 <h2>Cuadrado</h2>
-                <img src="../assets/1f7e5_ccexpress.png" alt="Imagen de un Cuadrado"/>
+                <img src="../assets/1f7e5_ccexpress.png" alt="Imagen de un Cuadrado" />
                 <form>
                     <label for="cLado">Tamaño de cada lado</label>
                     <br>
                     <input id="cLado" type="number" placeholder="Ej: 5">
                     <button type="button" onclick="cuadrado2()">Calcular</button>
                     <p>Resultado: </p>
-                    <div class="resultados"><p id="resultP"></p></div>
+                    <div class="resultados">
+                        <p id="resultP"></p>
+                    </div>
                 </form>
             </div>
-            <div class="figures-item">
+            <div class="main__figures--item">
                 <h2>Triangulo</h2>
-                <img src="../assets/OIP.png" alt="Imagen de un Triangulo"/>
-                <form class="figuras-form">
-                    
+                <img src="../assets/OIP.png" alt="Imagen de un Triangulo" />
+                <form class="main__figures--form">
                     <label for="tLado1">Primer Lado</label>
                     <input name="tLado1" id="tLado1" type="number" placeholder="Ej: 5">
                     <br>
@@ -62,32 +69,36 @@
                     <label for="tBase">Base</label>
                     <input name="Base" id="tBase" type="number" placeholder="Ej: 10">
                     <br>
-                    <label   id="mostrar1" for="tAltura" >Altura</label>
-                    <input   name="tAltura" id="tAltura" type="number" placeholder="Ej: 20">
-                    <button class="ocultar"id="calcular1" type="button" onclick="triangulo2()">Calcular1</button>
-                    <button  id="calcular2" type="button" onclick="triangulo3()">Calcular2</button>
-                    
+                    <label id="mostrar1" for="tAltura">Altura</label>
+                    <input name="tAltura" id="tAltura" type="number" placeholder="Ej: 20">
+                    <button class="ocultar" id="calcular1" type="button" onclick="triangulo2()">Calcular1</button>
+                    <button id="calcular2" type="button" onclick="triangulo3()">Calcular2</button>
                     <p>Resultado: </p>
-                    <div class="resultados"><p id="resultT"></p></div>
+                    <div class="resultados">
+                        <p id="resultT"></p>
+                    </div>
                 </form>
             </div>
-            <div class="figures-item">
+            <div class="main__figures--item">
                 <h2>Circulo</h2>
-                <img src="../assets/R_ccexpress.png" alt="Imagen de un Circulo"/>
+                <img src="../assets/R_ccexpress.png" alt="Imagen de un Circulo" />
                 <form>
                     <label for="cRadio">Ingresa el valor del radio</label>
                     <input name="cRadio" id="cRadio" type="number" placeholder="Ej: 10">
                     <button type="button" onclick="circulo2()">Calcular</button>
                     <p>Resultado: </p>
-                    <div class="resultados"><p id="resultC"></p></div>
+                    <div class="resultados">
+                        <p id="resultC"></p>
+                    </div>
                 </form>
             </div>
         </div>
     </main>
 
     <footer>
-        <div><a href="#">Ver mas</a></div>
+        <div><a href="https://abigailal.github.io/Portafolio/">Ver mas</a></div>
         <div><a href="https://github.com/Abigailal/">Repositorio</a></div>
     </footer>
 </body>
+
 </html>

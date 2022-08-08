@@ -1,6 +1,13 @@
 /* Mobile menu */
 .header { height: 60px; }
-.nav-menu {
+.header .header__logo {
+    width: 35%;
+    padding-top: 5px;
+}
+.header .header__logo img {
+    width: 100%;
+}
+.nav__menu {
     flex-direction: column;
     align-items: center;
     margin: 0;
@@ -16,11 +23,11 @@
     left: 100%;
     transition: left 0.3s;
 }
-.nav-menu-item { line-height: 70px; }
-.nav-menu-link:hover { background: none; }
-.nav-toggle { display: block; }
-.nav-menu_visible { left: 0; }
-.nav-toggle:focus:not(:focus-visible) { outline: none; }
+.nav__menu--item { line-height: 70px; }
+.nav__menu--link:hover { background: none; }
+.nav__toggle { display: block; }
+.nav__menu--visible { left: 0; }
+.nav__toggle:focus:not(:focus-visible) { outline: none; }
 
 main {
     padding-top: 25px;
