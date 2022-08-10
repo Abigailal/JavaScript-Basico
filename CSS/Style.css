@@ -145,12 +145,12 @@ footer {
 
 /*-------------------Figuras*/
 .main__figures {
-    height: 747px;
+    height: auto;
 }
 .main__figures .main__figures--container {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     justify-items: center;
-    padding-bottom: 60px;
+    padding-bottom: 77px;
     justify-content: center;
     align-items: center;
 }
@@ -174,12 +174,13 @@ footer {
 
 
 /*----------------------------Descuentos*/
-.main__descuentos {height: 747px;}
+.main__descuentos {height: auto;}
 .main__descuentos .main__descuentos--container {
     grid-template-columns: minmax(700px, 1fr);
     justify-items: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 47px;
 }
 
 .main__descuentos .main__descuentos--container .main__descuentos--item {
@@ -197,11 +198,12 @@ footer {
 
 
 /*---------------------------------------Estadistica*/
-.main__estadistica {height: 747px;}
+.main__estadistica {height: auto;}
 .main__estadistica .main__estadistica--container {
     grid-template-columns: minmax(700px, 1fr);
     justify-items: center;
     justify-content: center;
+    padding-bottom: 47px;
 }
 
 .main__estadistica .main__estadistica--container .main__estadistica--item{
